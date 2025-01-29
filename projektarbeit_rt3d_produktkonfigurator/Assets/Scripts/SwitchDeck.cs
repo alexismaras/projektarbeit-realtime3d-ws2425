@@ -61,13 +61,13 @@ public class SwitchDeck : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha5))
             {
                 faceMaterials = meshRendererSurfBoard11.materials;
-                faceMaterials[0]= redMaterial;
+                faceMaterials[0]= greenMaterial;
                 meshRendererSurfBoard11.materials = faceMaterials;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha6))
             {
                 faceMaterials = meshRendererSurfBoard11.materials;
-                faceMaterials[0]= greenMaterial;
+                faceMaterials[0]= blueMaterial;
                 meshRendererSurfBoard11.materials = faceMaterials;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha7))
