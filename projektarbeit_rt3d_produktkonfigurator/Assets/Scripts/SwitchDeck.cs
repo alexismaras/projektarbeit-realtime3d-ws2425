@@ -17,6 +17,15 @@ public class SwitchDeck : MonoBehaviour
     [SerializeField] GameObject surfBoard22;
     [SerializeField] GameObject surfBoard23;
 
+    [SerializeField] GameObject finStandard1;
+    [SerializeField] GameObject finSwallow1;
+
+    [SerializeField] GameObject finStandard2;
+    [SerializeField] GameObject finSwallow2;
+
+    [SerializeField] GameObject finStandard3;
+    [SerializeField] GameObject finSwallow3;
+
     MeshRenderer meshRendererSurfBoard01;
     MeshRenderer meshRendererSurfBoard02;
     MeshRenderer meshRendererSurfBoard03;
@@ -29,6 +38,15 @@ public class SwitchDeck : MonoBehaviour
     MeshRenderer meshRendererSurfBoard22;
     MeshRenderer meshRendererSurfBoard23;
 
+    MeshRenderer meshRendererFinStandard1;
+    MeshRenderer meshRendererFinSwallow1;
+
+    MeshRenderer meshRendererFinStandard2;
+    MeshRenderer meshRendererFinSwallow2;
+
+    MeshRenderer meshRendererFinStandard3;
+    MeshRenderer meshRendererFinSwallow3;
+
     [SerializeField] Material greenMaterial;
     [SerializeField] Material blueMaterial;
     [SerializeField] Material redMaterial;
@@ -36,11 +54,52 @@ public class SwitchDeck : MonoBehaviour
 
 
 
-    int chosenNose= 0;
-    int chosenTail= 1;
+    int chosenNose = 0;
+    int chosenTail = 1;
+
+    int chosenFin = 1;
     // Start is called before the first frame update
     void Start()
     {
+        // for (var nose = 0; nose < 2; nose++)
+        // {
+        //     for (var tail = 1; tail < 4; tail++)
+        //     {
+        //         string boardMeshRendererFieldName = $"meshRendererSurfBoard{nose}{tail}";
+        //         string surfBoardFieldName = $"surfBoard{nose}{tail}";
+
+        //         FieldInfo boardMeshRendererField = GetType().GetField(boardMeshRendererFieldName, BindingFlags.NonPublic | BindingFlags.Instance);
+        //         FieldInfo surfBoardField = GetType().GetField(surfBoardFieldName, BindingFlags.NonPublic | BindingFlags.Instance);
+
+        //         GameObject surfBoard = (GameObject)surfBoardField.GetValue(this);
+        //         MeshRenderer renderer = surfBoard.GetComponent<MeshRenderer>();
+        //         boardMeshRendererField.SetValue(this, renderer); 
+        //     }
+        // }
+
+        // for (var fin = 1; fin < 3; fin++)
+        // {
+        //     string finMeshRendererFieldName = $"meshRendererFinStandard{fin}";
+        //     string finFieldName = $"finStandard{fin}";
+
+        //     FieldInfo finMeshRendererField = GetType().GetField(finMeshRendererFieldName, BindingFlags.NonPublic | BindingFlags.Instance);
+        //     FieldInfo finField = GetType().GetField(finFieldName, BindingFlags.NonPublic | BindingFlags.Instance);
+
+        //     GameObject finStandard = (GameObject)finField.GetValue(this);
+        //     MeshRenderer rendererStandard = finStandard.GetComponentInChildren<MeshRenderer>();
+        //     finMeshRendererField.SetValue(this, rendererStandard); 
+
+        //     string finSwallowMeshRendererFieldName = $"meshRendererFinSwallow{fin}";
+        //     string finSwallowFieldName = $"finSwallow{fin}";
+
+        //     FieldInfo finSwallowMeshRendererField = GetType().GetField(finSwallowMeshRendererFieldName, BindingFlags.NonPublic | BindingFlags.Instance);
+        //     FieldInfo finSwallowField = GetType().GetField(finSwallowFieldName, BindingFlags.NonPublic | BindingFlags.Instance);
+
+        //     GameObject finSwallow = (GameObject)finSwallowField.GetValue(this);
+        //     MeshRenderer rendererSwallow = finSwallow.GetComponentInChildren<MeshRenderer>();
+        //     finSwallowMeshRendererField.SetValue(this, rendererSwallow); 
+        // }
+
         meshRendererSurfBoard01 = surfBoard01.GetComponent<MeshRenderer>();
         meshRendererSurfBoard02 = surfBoard02.GetComponent<MeshRenderer>();
         meshRendererSurfBoard03 = surfBoard03.GetComponent<MeshRenderer>();
@@ -52,6 +111,15 @@ public class SwitchDeck : MonoBehaviour
         meshRendererSurfBoard21 = surfBoard21.GetComponent<MeshRenderer>();
         meshRendererSurfBoard22 = surfBoard22.GetComponent<MeshRenderer>();
         meshRendererSurfBoard23 = surfBoard23.GetComponent<MeshRenderer>();
+
+        meshRendererFinStandard1 = finStandard1.GetComponent<MeshRenderer>();
+        meshRendererFinSwallow1 = finSwallow1.GetComponent<MeshRenderer>();
+
+        meshRendererFinStandard2 = finStandard2.GetComponent<MeshRenderer>();
+        meshRendererFinSwallow2 = finSwallow2.GetComponent<MeshRenderer>();
+
+        meshRendererFinStandard3 = finStandard3.GetComponent<MeshRenderer>();
+        meshRendererFinSwallow3 = finSwallow3.GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -59,28 +127,30 @@ public class SwitchDeck : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            chosenNose = 0;
+            if (chosenNose < 2)
+                chosenNose += 1;
+            else
+            {
+                chosenNose = 0;
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            chosenNose = 1;
+            if (chosenTail < 3)
+                chosenTail += 1;
+            else
+            {
+                chosenTail = 1;
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            chosenNose = 2;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            chosenTail = 1;
-        }
-        else if (Input.GetKeyDown(KeyCode.W))
-        {
-            chosenTail = 2;
-        }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            chosenTail = 3;
+            if (chosenFin < 3)
+                chosenFin += 1;
+            else
+            {
+                chosenFin = 1;
+            }
         }
 
         ChooseBoard();
@@ -105,12 +175,12 @@ public class SwitchDeck : MonoBehaviour
 
     void ChooseBoard()
     {
-        for (var n = 0; n < 3; n++)
+        for (var nose = 0; nose < 3; nose++)
         {
-            for (var t = 1; t < 4; t++)
+            for (var tail = 1; tail < 4; tail++)
             {
-                MeshRenderer boardMeshRenderer =  GetVariableContaining($"meshRendererSurfBoard{n}{t}");
-                if (n == chosenNose && t == chosenTail)
+                MeshRenderer boardMeshRenderer = GetVariableContaining($"meshRendererSurfBoard{nose}{tail}");
+                if (nose == chosenNose && tail == chosenTail)
                 {
                     boardMeshRenderer.enabled = true;
                 }
@@ -118,17 +188,41 @@ public class SwitchDeck : MonoBehaviour
                 {
                     boardMeshRenderer.enabled = false;
                 }
+
+                for (var fin = 1; fin < 4; fin++)
+                {
+                    MeshRenderer finStandardMeshRenderer = GetVariableContaining($"meshRendererFinStandard{fin}");
+                    MeshRenderer finSwallowMeshRenderer = GetVariableContaining($"meshRendererFinSwallow{fin}");
+                    if (fin == chosenFin)
+                    {
+                        if (chosenTail != 3)
+                        {
+                            finStandardMeshRenderer.enabled = true;
+                            finSwallowMeshRenderer.enabled = false;
+                        }
+                        else
+                        {
+                            finStandardMeshRenderer.enabled = false;
+                            finSwallowMeshRenderer.enabled = true;
+                        }
+                    }
+                    else
+                    {
+                        finStandardMeshRenderer.enabled = false;
+                        finSwallowMeshRenderer.enabled = false;
+                    }
+                }
             }
         }
     }
 
     void AllMaterialSet(Material boardMaterial)
     {
-        for (var n = 0; n < 3; n++)
+        for (var nose = 0; nose < 3; nose++)
         {
-            for (var t = 1; t < 4; t++)
+            for (var tail = 1; tail < 4; tail++)
             {
-                MaterialGetSet(GetVariableContaining($"meshRendererSurfBoard{n}{t}"), boardMaterial);
+                MaterialGetSet(GetVariableContaining($"meshRendererSurfBoard{nose}{tail}"), boardMaterial);
             }
         }
     }

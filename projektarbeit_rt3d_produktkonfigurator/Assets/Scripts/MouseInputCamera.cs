@@ -6,7 +6,8 @@ using Cinemachine;
 public class MouseInputCamera : MonoBehaviour
 {
 
-    [SerializeField] CinemachineFreeLook freeLookCamera;
+    [SerializeField] CinemachineFreeLook mainLookCamera;
+    [SerializeField] CinemachineFreeLook finLookCamera;
     [SerializeField] string mouseXAxisName = "Mouse X";
     [SerializeField] string mouseYAxisName = "Mouse Y";
     [SerializeField] KeyCode activationKey = KeyCode.Mouse1;
@@ -21,17 +22,26 @@ public class MouseInputCamera : MonoBehaviour
     {
         if (Input.GetKey(activationKey))
         {
-            freeLookCamera.m_XAxis.m_InputAxisName = mouseXAxisName;
-            freeLookCamera.m_YAxis.m_InputAxisName = mouseYAxisName;
+            mainLookCamera.m_XAxis.m_InputAxisName = mouseXAxisName;
+            mainLookCamera.m_YAxis.m_InputAxisName = mouseYAxisName;
+
+            finLookCamera.m_XAxis.m_InputAxisName = mouseXAxisName;
+            finLookCamera.m_YAxis.m_InputAxisName = mouseYAxisName;
         }
         else
         {
             // Disable input when the mouse button is not pressed
-            freeLookCamera.m_XAxis.m_InputAxisName = "";
-            freeLookCamera.m_YAxis.m_InputAxisName = "";
+            mainLookCamera.m_XAxis.m_InputAxisName = "";
+            mainLookCamera.m_YAxis.m_InputAxisName = "";
 
-            freeLookCamera.m_XAxis.m_InputAxisValue = 0f;
-            freeLookCamera.m_YAxis.m_InputAxisValue = 0f;
+            mainLookCamera.m_XAxis.m_InputAxisValue = 0f;
+            mainLookCamera.m_YAxis.m_InputAxisValue = 0f;
+
+            finLookCamera.m_XAxis.m_InputAxisName = "";
+            finLookCamera.m_YAxis.m_InputAxisName = "";
+
+            finLookCamera.m_XAxis.m_InputAxisValue = 0f;
+            finLookCamera.m_YAxis.m_InputAxisValue = 0f;
         }
         
     }
