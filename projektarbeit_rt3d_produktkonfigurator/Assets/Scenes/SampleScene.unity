@@ -1637,6 +1637,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b2ddffcdb5c32aa47a14c9458f331e45,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b2ddffcdb5c32aa47a14c9458f331e45,
         type: 3}
       propertyPath: m_Name
@@ -1744,6 +1749,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 473845908}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &180269198
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1001 &187096632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3881,6 +3924,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d151e468234038645aad7df44bf0e223,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d151e468234038645aad7df44bf0e223,
         type: 3}
       propertyPath: m_Name
@@ -4674,6 +4722,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 69bd81d53a1e9344392f96664f129865,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 69bd81d53a1e9344392f96664f129865,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7311990399118330561, guid: 69bd81d53a1e9344392f96664f129865,
@@ -10009,6 +10062,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d080f38acbb98c4a9360994f3347514,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1d080f38acbb98c4a9360994f3347514,
         type: 3}
       propertyPath: m_Name
@@ -10701,6 +10759,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5b595d7cbeaa16c49bbdb5d876778531,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5b595d7cbeaa16c49bbdb5d876778531,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5b595d7cbeaa16c49bbdb5d876778531,
@@ -11606,44 +11669,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93520ebbbb7235b44bf4c3d30be2ae03, type: 3}
---- !u!84 &1065175840
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!4 &1068486234 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 93520ebbbb7235b44bf4c3d30be2ae03,
@@ -13744,10 +13769,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 511cbad0ee4bb25439e5ec327b1681f6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 511cbad0ee4bb25439e5ec327b1681f6,
         type: 3}
       propertyPath: m_Name
       value: nose0tail2object
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 511cbad0ee4bb25439e5ec327b1681f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17201,6 +17236,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f50fa43bcccc4ac438e7341ddef7ad76,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f50fa43bcccc4ac438e7341ddef7ad76,
         type: 3}
       propertyPath: m_Name
@@ -18039,6 +18079,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1f3e3ffc5a442384c8aaf38d5dd971a0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1f3e3ffc5a442384c8aaf38d5dd971a0,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f3e3ffc5a442384c8aaf38d5dd971a0,
@@ -22216,6 +22261,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3f6a62c6fea50244cb574746f3241f62,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -6084761870657229393, guid: 3f6a62c6fea50244cb574746f3241f62,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -22415,6 +22465,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3bc7b5e9f66e030498bce5bf743f9cf1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 686949927050218141, guid: 3bc7b5e9f66e030498bce5bf743f9cf1,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -22606,6 +22661,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1c7a22b24efb08a4896072f29f79ff6b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1c7a22b24efb08a4896072f29f79ff6b,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1c7a22b24efb08a4896072f29f79ff6b,
@@ -23619,6 +23679,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5177da6f14e7f79419eb3cf87a99d91a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -7311990399118330561, guid: 5177da6f14e7f79419eb3cf87a99d91a,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -24456,6 +24521,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b0bbf3984f39fef44a24d03b1b375b68,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -6084761870657229393, guid: b0bbf3984f39fef44a24d03b1b375b68,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -25091,6 +25161,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fc93c266db83a764ea5bd779f48b847a,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fc93c266db83a764ea5bd779f48b847a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07228212e19ba9a4fa2f5485dfa2f981, type: 2}
+    - target: {fileID: -7511558181221131132, guid: fc93c266db83a764ea5bd779f48b847a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: cc7b5b44c770e1346a81a7084cb00750, type: 2}
     - target: {fileID: 919132149155446097, guid: fc93c266db83a764ea5bd779f48b847a,
         type: 3}
       propertyPath: m_Name
