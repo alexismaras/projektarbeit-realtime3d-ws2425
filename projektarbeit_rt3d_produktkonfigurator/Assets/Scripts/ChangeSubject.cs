@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.EventSystems; 
 
 public class ChangeSubject : MonoBehaviour
 {
@@ -34,14 +35,26 @@ public class ChangeSubject : MonoBehaviour
 
     void MouseOverFunction()
     {
-        if (mouseOver && Input.GetMouseButtonDown(0))
+        if (!IsMouseOverUI())
         {
-            finLookCamera.m_Priority = 20;
+            if (mouseOver && Input.GetMouseButtonDown(0))
+            {
+                finLookCamera.m_Priority = 20;
+            }
+            else if (!mouseOver && Input.GetMouseButtonDown(0))
+            {
+                finLookCamera.m_Priority = 0;
+            }
         }
-        else if (!mouseOver && Input.GetMouseButtonDown(0))
+        else
         {
-            finLookCamera.m_Priority = 0;
+            Debug.Log("Typehsit");
         }
+    }
+
+    bool IsMouseOverUI()
+    {
+        return EventSystem.current.IsPointerOverGameObject();
     }
 
 }
