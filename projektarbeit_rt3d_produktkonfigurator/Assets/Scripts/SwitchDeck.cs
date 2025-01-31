@@ -54,10 +54,10 @@ public class SwitchDeck : MonoBehaviour
 
 
 
-    int chosenNose = 0;
-    int chosenTail = 1;
+    public int chosenNose = 0;
+    public int chosenTail = 1;
 
-    int chosenFin = 1;
+    public int chosenFin = 1;
     // Start is called before the first frame update
     void Start()
     {
