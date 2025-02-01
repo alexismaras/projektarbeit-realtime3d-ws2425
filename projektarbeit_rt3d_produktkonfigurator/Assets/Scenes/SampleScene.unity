@@ -1642,6 +1642,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b2ddffcdb5c32aa47a14c9458f331e45,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b2ddffcdb5c32aa47a14c9458f331e45,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 919132149155446097, guid: b2ddffcdb5c32aa47a14c9458f331e45,
         type: 3}
       propertyPath: m_Name
@@ -1749,44 +1759,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 473845908}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &180269198
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1001 &187096632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3929,6 +3901,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d151e468234038645aad7df44bf0e223,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d151e468234038645aad7df44bf0e223,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 919132149155446097, guid: d151e468234038645aad7df44bf0e223,
         type: 3}
       propertyPath: m_Name
@@ -10067,6 +10049,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d080f38acbb98c4a9360994f3347514,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d080f38acbb98c4a9360994f3347514,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d080f38acbb98c4a9360994f3347514,
         type: 3}
       propertyPath: m_Name
@@ -10766,6 +10758,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5b595d7cbeaa16c49bbdb5d876778531,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5b595d7cbeaa16c49bbdb5d876778531,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 919132149155446097, guid: 5b595d7cbeaa16c49bbdb5d876778531,
         type: 3}
       propertyPath: m_Name
@@ -13774,6 +13776,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 511cbad0ee4bb25439e5ec327b1681f6,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 511cbad0ee4bb25439e5ec327b1681f6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 919132149155446097, guid: 511cbad0ee4bb25439e5ec327b1681f6,
         type: 3}
       propertyPath: m_Name
@@ -16286,12 +16298,27 @@ MonoBehaviour:
   finSwallow2: {fileID: 70686483}
   finStandard3: {fileID: 408957791}
   finSwallow3: {fileID: 1101318094}
-  greenMaterial: {fileID: 2100000, guid: 35cf61d02e0d6384c916162a2eecb47f, type: 2}
-  blueMaterial: {fileID: 2100000, guid: 6ac74a2519eaf404a9850730c51bf34d, type: 2}
-  redMaterial: {fileID: 2100000, guid: 6eb24eae148836a458d82eb97772c254, type: 2}
+  outlineMaterial1: {fileID: 2100000, guid: 35cf61d02e0d6384c916162a2eecb47f, type: 2}
+  outlineMaterial2: {fileID: 2100000, guid: a7b9b673242436d43bc4d9cb491086d2, type: 2}
+  outlineMaterial3: {fileID: 2100000, guid: f7c08db5d2dbe0348a1e6dead7f0764a, type: 2}
+  outlineMaterial4: {fileID: 2100000, guid: 07228212e19ba9a4fa2f5485dfa2f981, type: 2}
+  outlineMaterial5: {fileID: 2100000, guid: cf3cca8da2e17b0439ea0025121279ab, type: 2}
+  outlineMaterial6: {fileID: 2100000, guid: 2df7d2ac980bbe840bcfe409674ca8e9, type: 2}
+  outlineMaterial7: {fileID: 2100000, guid: 54effde8973392b408c2301702f20d43, type: 2}
+  outlineMaterial8: {fileID: 2100000, guid: 2623170b51db6ef4da86206e40ca4cae, type: 2}
+  deckMaterial1: {fileID: 2100000, guid: ec6f74f1f7933564ba1b112a233c6091, type: 2}
+  deckMaterial2: {fileID: 2100000, guid: a3f174e8518754d41b0f850f6fd2a590, type: 2}
+  deckMaterial3: {fileID: 2100000, guid: 43f96a731508ece4aa6bbd28990b0daa, type: 2}
+  deckMaterial4: {fileID: 2100000, guid: 43382dc15edd4b94183bdde1dddc5460, type: 2}
+  deckMaterial5: {fileID: 2100000, guid: a794ee94c5eaac1478ee6d12be559268, type: 2}
+  deckMaterial6: {fileID: 2100000, guid: caadc4bd9a3fcbe4c9006400a39d537b, type: 2}
+  deckMaterial7: {fileID: 2100000, guid: a8b1e27e2e645464fbdb1ee1d3c77779, type: 2}
+  deckMaterial8: {fileID: 2100000, guid: cc7b5b44c770e1346a81a7084cb00750, type: 2}
   chosenNose: 0
   chosenTail: 1
   chosenFin: 1
+  chosenDeckMaterial: 1
+  chosenOutlineMaterial: 1
 --- !u!4 &1520201565
 Transform:
   m_ObjectHideFlags: 0
@@ -16391,6 +16418,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1521079484}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &1533992024
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1001 &1537724369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17241,6 +17306,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f50fa43bcccc4ac438e7341ddef7ad76,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f50fa43bcccc4ac438e7341ddef7ad76,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 919132149155446097, guid: f50fa43bcccc4ac438e7341ddef7ad76,
         type: 3}
       propertyPath: m_Name
@@ -18086,6 +18161,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1f3e3ffc5a442384c8aaf38d5dd971a0,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1f3e3ffc5a442384c8aaf38d5dd971a0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 919132149155446097, guid: 1f3e3ffc5a442384c8aaf38d5dd971a0,
         type: 3}
       propertyPath: m_Name
@@ -22668,6 +22753,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1c7a22b24efb08a4896072f29f79ff6b,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1c7a22b24efb08a4896072f29f79ff6b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 919132149155446097, guid: 1c7a22b24efb08a4896072f29f79ff6b,
         type: 3}
       propertyPath: m_Name

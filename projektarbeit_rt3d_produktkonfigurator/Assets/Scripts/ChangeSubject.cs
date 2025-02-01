@@ -46,10 +46,6 @@ public class ChangeSubject : MonoBehaviour
                 finLookCamera.m_Priority = 0;
             }
         }
-        else
-        {
-            Debug.Log("Typehsit");
-        }
     }
 
     bool IsMouseOverUI()

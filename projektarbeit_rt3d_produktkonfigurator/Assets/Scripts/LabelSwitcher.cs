@@ -62,18 +62,18 @@ public class LabelSwitcher : MonoBehaviour
 
     string GetStringContaining(string searchString)
     {
-        // Get all fields in this class
+
         FieldInfo[] fields = this.GetType().GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
 
         foreach (FieldInfo field in fields)
         {
-            // Check if the field name contains the search string
+
             if (field.Name.Contains(searchString))
             {
                 return field.GetValue(this) as string;
             }
         }
 
-        return null; // Return null if no match is found
+        return null;
     }
 }
