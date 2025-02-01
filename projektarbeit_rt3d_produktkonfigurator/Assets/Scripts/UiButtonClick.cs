@@ -53,4 +53,16 @@ public class UiButtonClick : MonoBehaviour
         else
             switchDeck.chosenFin = 3;
     }
+
+    public void ChangeColorDeck(int colorSwatch)
+    {
+        if (switchDeck.chosenDeckMaterial != colorSwatch)
+            switchDeck.chosenDeckMaterial = colorSwatch;
+    }
+
+    public void ChangeColorOutline(int colorSwatch)
+    {
+        if (switchDeck.chosenOutlineMaterial != colorSwatch)
+            switchDeck.chosenOutlineMaterial = colorSwatch;
+    }
 }

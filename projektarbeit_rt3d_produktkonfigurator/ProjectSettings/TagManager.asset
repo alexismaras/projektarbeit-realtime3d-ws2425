@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FinIcon
   - BoardIcon
+  - OutlineSwatch
+  - DeckSwatch
   layers:
   - Default
   - TransparentFX

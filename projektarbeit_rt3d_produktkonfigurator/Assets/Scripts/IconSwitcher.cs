@@ -26,6 +26,25 @@ public class IconSwitcher : MonoBehaviour
     [SerializeField] Sprite fin2;
     [SerializeField] Sprite fin3;
 
+    [SerializeField] Sprite swatchInactive1;
+    [SerializeField] Sprite swatchInactive2;
+    [SerializeField] Sprite swatchInactive3;
+    [SerializeField] Sprite swatchInactive4;
+    [SerializeField] Sprite swatchInactive5;
+    [SerializeField] Sprite swatchInactive6;
+    [SerializeField] Sprite swatchInactive7;
+    [SerializeField] Sprite swatchInactive8;
+
+    [SerializeField] Sprite swatchActive1;
+    [SerializeField] Sprite swatchActive2;
+    [SerializeField] Sprite swatchActive3;
+    [SerializeField] Sprite swatchActive4;
+    [SerializeField] Sprite swatchActive5;
+    [SerializeField] Sprite swatchActive6;
+    [SerializeField] Sprite swatchActive7;
+    [SerializeField] Sprite swatchActive8;
+    
+
     int currentChosenNose;
     int currentChosenTail;
 
