@@ -121,10 +121,10 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.136
+    m_Value: 0.19
   clamp:
     m_OverrideState: 1
-    m_Value: 0.123
+    m_Value: 0.2
 --- !u!114 &-1234655168000276151
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -143,10 +143,10 @@ MonoBehaviour:
     m_Value: 1
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 10
+    m_Value: 15
   gaussianEnd:
     m_OverrideState: 1
-    m_Value: 30
+    m_Value: 50
   gaussianMaxRadius:
     m_OverrideState: 1
     m_Value: 1

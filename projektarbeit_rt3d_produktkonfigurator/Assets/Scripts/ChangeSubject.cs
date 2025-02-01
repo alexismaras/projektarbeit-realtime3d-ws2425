@@ -9,6 +9,8 @@ public class ChangeSubject : MonoBehaviour
 
     [SerializeField] CinemachineFreeLook finLookCamera;
 
+    [SerializeField] GameObject finTargetVisual;
+
     bool mouseOver = false;
     // Start is called before the first frame update
     void Start()
@@ -35,13 +37,18 @@ public class ChangeSubject : MonoBehaviour
 
     void MouseOverFunction()
     {
-        if (!IsMouseOverUI())
+        if (mouseOver)
         {
-            if (mouseOver && Input.GetMouseButtonDown(0))
+            finTargetVisual.GetComponent<MeshRenderer>().enabled = true;
+            if (!IsMouseOverUI() && Input.GetMouseButtonDown(0))
             {
                 finLookCamera.m_Priority = 20;
             }
-            else if (!mouseOver && Input.GetMouseButtonDown(0))
+        }
+        else if (!mouseOver)
+        {
+            finTargetVisual.GetComponent<MeshRenderer>().enabled = false;
+            if (!mouseOver && !IsMouseOverUI() && Input.GetMouseButtonDown(0))
             {
                 finLookCamera.m_Priority = 0;
             }

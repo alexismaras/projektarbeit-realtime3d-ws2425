@@ -8,6 +8,7 @@ TagManager:
   - BoardIcon
   - OutlineSwatch
   - DeckSwatch
+  - MainLevelSwitcher
   layers:
   - Default
   - TransparentFX
